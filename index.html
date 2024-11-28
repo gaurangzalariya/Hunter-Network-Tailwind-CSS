@@ -1,0 +1,761 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+
+    <!-- fontosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- //media qury -->
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav
+        class="max-xl:px-[0px] max-[1440px]:px-[24px] max-lg:mx-[0px] max-w-containerWidth justify-between max-lg:bg-primaryBlue  flex-col lg:items-center mx-auto flex xl:flex-row lg:my-[30px] xl:gap-[5vw]">
+        <div
+            class=" w-full max-md:flex justify-between lg:max-w-[20%] max-lg:py-[15px] max-lg:px-[15px] max-lg:border-b max-lg:border-b-[4px] max-lg:border-white">
+            <img src="./images/hunter_logo.png" alt="Hunter Logo" class="hidden lg:block">
+            <img src="./images/footer logo.png" alt="Footer Logo" class="lg:hidden w-[250px] max-md:w-[150px]">
+        </div>
+
+        <!-- Example Navbar -->
+
+        <div
+            class="lg:flex  lg:items-center whitespace-normal lg:mt-[25px] xl:justify-between xl:mt-[0px] xl:flex-row xl:w-[75%]">
+            <div class="hidden px-[20px] lg:block max-lg:w-full max-lg:bg-primaryBlue max-lg:py-[10px]"
+                id="navbar-default">
+                <ul class="flex flex-col gap-y-[10px] lg:flex-row lg:items-center lg:gap-[40px]">
+                    <li>
+                        <a href="#"
+                            class="font-[kanit] text-[20px] font-[400] md:leading-[22px] max-lg:text-white lg:text-[16px] hover:border-b transition duration-300 ease-in-out hover:border-b-[3px] hover:border-primaryBlue">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="font-[kanit] text-[20px] font-[400] md:leading-[22px] max-lg:text-white lg:text-[16px] hover:border-b transition duration-300 ease-in-out hover:border-b-[3px] hover:border-primaryBlue">SOLUTION</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="font-[kanit] text-[20px] font-[400] md:leading-[22px] max-lg:text-white lg:text-[16px] hover:border-b transition duration-300 ease-in-out hover:border-b-[3px] hover:border-primaryBlue">FEATURE</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="font-[kanit] text-[20px] font-[400] md:leading-[22px] max-lg:text-white lg:text-[16px] hover:border-b transition duration-300 ease-in-out hover:border-b-[3px] hover:border-primaryBlue">WHY
+                            US</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="font-[kanit] text-[20px] font-[400] md:leading-[22px] max-lg:text-white lg:text-[16px] hover:border-b transition duration-300 ease-in-out hover:border-b-[3px] hover:border-primaryBlue">TESTIMONIALS</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="font-[kanit] text-[20px] font-[400] md:leading-[22px] max-lg:text-white lg:text-[16px] hover:border-b transition duration-300 ease-in-out hover:border-b-[3px] hover:border-primaryBlue">CONTACT</a>
+                    </li>
+                    <li class="md:hidden  w-[100%] text-center border-t border-white">
+                        <button
+                            class="py-[20px] px-[23px] mt-[15px] mb-[5px] rounded-[5px] bg-white text-primaryBlue font-[kanit] md:text-[16px] md:leading-[26.91px] font-[500] hover:text-white hover:bg-primaryBlue hover:outline hover:outline-2 hover:outline-white ">
+                            Call Today! (408) 599-3900
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <button
+                    class="bg-primaryBlue text-white font-kanit font-medium md:px-10 md:py-5  md:text-lg md:leading-[26.91px] max-lg:hidden rounded-lg  transition ease-in-out hover:text-primaryBlue hover:bg-white hover:outline hover:outline-2 hover:outline-primaryBlue">
+                    Call Today! (408) 599-3900
+                </button>
+            </div>
+        </div>
+
+        <div class="lg:hidden absolute top-[15px] right-[15px] md:top-[11px] md:right-[80px]">
+            <button id="menu-button" data-collapse-toggle="navbar-default" type="button"
+                class="lg:hidden absolute top-[px] right-[1px] md:top-[17px] md:right-[-60px] inline-flex items-center bg-white p-2 w-10 h-10 justify-center text-sm text-primaryBlue rounded-lg hover:bg-primaryBlue focus:outline-none focus:ring-2 focus:ring-white focus:text-white dark:text-primaryBlue dark:hover:bg-primaryBlue dark:focus:ring-white"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <button
+                class="rounded-[5px] text-primaryBlue bg-white font-[500] font-[kanit] md:px-[40px] md:py-[23px] max-md:hidden md:right-[0px]  md:leading-[26.91px] hover:text-white hover:bg-primaryBlue hover:outline hover:outline-2 hover:outline-white">
+                Call Today! (408) 599-3900
+            </button>
+
+        </div>
+    </nav>
+
+    <div class="max-w- mx-auto flex flex-col gap-[70px] md:gap-[90px] xl:gap-[150px] ">
+        <!-- start heroseciton -->
+        <section class=" max-w-containerWidth flex-col h-auto mx-auto  flex md:flex-row">
+            <div
+                class="bg-backgroundColor flex flex-col h-auto justify-center md:max-w-[50%]  max-md:py-[50px] gap-[25px] md:gap-[45px] md:px-[4%] lg:px-[60px] lg:py-[100px] xl:py-[134px]">
+                <div class="flex flex-col gap-[42px] max-w-[614px] h-auto mx-auto">
+                    <h1
+                        class="font-[Space Grotesk] text-primaryBlue leading-[1] font-bold text-[50px] max-md:text-center md:text-[5.3vw] 2xl:text-[100px]">
+                        CONNECT Comfortably Connected
+                    </h1>
+                    <p
+                        class="text-primaryTextColor font-[kanit] text-smallparagraph  font-normalWeight max-md:mx-mediumMargin max-md:text-center leading-medium-lh lg:text-smallText">
+                        Empower your business with cutting-edge hardware, advanced software and seamless client
+                        communication
+                    </p>
+                </div>
+                <div class=" max-md:mx-auto max-md:mb-[15px]">
+                    <button
+                        class="text-white py-[15px] px-[15px] flex flex-row gap-[42px] rounded-[5px] bg-primaryBlue font-[Kanit] text-[14px] font-medium md:py-[23px] md:py-[23px] md:px-[23px]  md:text-[16px] md:leading-[26.91px] transition ease-in-out hover:text-primaryBlue hover:bg-white hover:outline hover:outline-2 hover:outline-primaryBlue">
+                        Explore Our Solution
+                        <a href="" class="">></a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="h-auto md:max-w-[full] ">
+                <img src="./images/image hero section.png" class="h-auto" alt="">
+            </div>
+        </section>
+        <!--//// phon system section //// -->
+
+        <section
+            class="max-[1299px]:mx-mediumMargin mx-auto  max-w-sectionWidth flex flex-col gap-mediumGap md:gap-xlGap ">
+            <!-- phone system info -->
+            <div class=" flex lg:flex-row flex-col gap-smallGap lg:gap-largGap ">
+                <div class="w-full lg:max-w-[67%]">
+                    <h2
+                        class="font-sp-g text-primaryBlue text-mediumText leading-medium-lh font-extraBold max-md:text-center md:text-xlText  lg:text-2xlText">
+                        Comprehensive Phone Systems For Modern Businesses
+                    </h2>
+                </div>
+                <div class="w-full lg:max-w-[33%] flex flex-col mx-auto justify-center">
+                    <p
+                        class="font-[kanit] text-primaryTextColor text-smallparagraph leading-pl font-[400] max-md:text-center md:leading-lgpl lg:text-largeParagraph">
+                        Our business phone systems are designed to streamline communication, enhance productivity and
+                        scale
+                        with your company’s growth. Discover the power of integrated hardware and software built to
+                        support
+                        your needs.
+                    </p>
+                </div>
+            </div>
+            <!-- phone services -->
+            <div
+                class="mx-auto w-sectionWidth grid grid-cols-1 sm:grid-cols-2 gap-[50px] md:gap-[73.73px] lg:grid-cols-4 ">
+                <!-- first services -->
+                <div class="w-full flex flex-col gap-[15px] max-md:mx-auto md:gap-[30px] max-lg:text-center">
+                    <div class="max-lg:mx-auto ">
+                        <img src="./images/svg2793.png" alt="">
+                    </div>
+                    <div class=" flex flex-col gap-[7px] md:gap-[15px]">
+                        <h4
+                            class="text-primaryBlue text-smallText font-extraBold md:text-mediumText md:font-sp-g md:leading-md-lh4">
+                            Office link
+                        </h4>
+                        <p
+                            class="font-[kanit] text-smallparagraph leading-pl lg:text-largeParagraph md:leading-lgpl font-normalWeight">
+                            Link your offices and remote employees under a single unified phone system
+                        </p>
+                    </div>
+                </div>
+                <!-- second services -->
+                <div class="w-full flex flex-col gap-[15px] max-md:mx-auto md:gap-[30px] max-lg:text-center">
+                    <div class=" max-lg:mx-auto">
+                        <img src="./images/image_2024_10_18T16_22_53_548Z (1).png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[7px] md:gap-[15px]">
+                        <h4
+                            class="text-primaryBlue text-smallText font-extraBold md:text-mediumText md:font-sp-g md:leading-md-lh4">
+                            Unlimited Calling
+                        </h4>
+                        <p
+                            class="font-[kanit] text-smallparagraph font-normalWeight leading-pl max-md:text-center lg:text-largeParagraph md:leading-lgpl">
+                            Unlimited nationwide and international calls to select countries.
+                        </p>
+                    </div>
+                </div>
+                <!-- third services -->
+                <div class="w-full flex flex-col gap-[15px] max-md:mx-auto md:gap-[30px] max-lg:text-center">
+                    <div class=" max-lg:mx-auto">
+                        <img src="./images/image_2024_10_18T16_22_53_549Z.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[7px] md:gap-[15px]">
+                        <h4
+                            class="text-primaryBlue text-smallText font-extraBold md:text-mediumText md:font-sp-g md:leading-md-lh4">
+                            Flexible Call Routing
+                        </h4>
+                        <p
+                            class="font-[kanit] text-smallparagraph font-normalWeight leading-pl max-md:text-center lg:text-largeParagraph md:leading-lgpl">
+                            Direct calls where they need to go whether in the office or to mobile workers.
+                        </p>
+                    </div>
+                </div>
+                <!-- fourth services -->
+                <div class="w-full flex flex-col gap-[15px] max-md:mx-auto md:gap-[30px] max-lg:text-center">
+                    <div class="max-lg:mx-auto">
+                        <img src="./images/svg-support.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[7px] md:gap-[15px]">
+                        <h4
+                            class="text-primaryBlue text-smallText font-extraBold md:text-mediumText md:font-sp-g md:leading-md-lh4">
+                            Local Support
+                        </h4>
+                        <p
+                            class="font-[kanit] text-smallparagraph font-normalWeight leading-pl max-md:text-center lg:text-largeParagraph md:leading-lgpl">
+                            Complete support when you need it from our Bay-Area support team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--//// end phone system section //// -->
+
+
+        <!--//// start Audion info section //// -->
+
+        <section
+            class="max-[1299px]:mx-mediumMargin max-w-sectionWidth  flex lg:flex-row flex-col gap-[70px] xl:gap-[115px] mx-auto">
+            <div class="lg:w-[50%] mx-auto">
+                <h1
+                    class="font-sp-g text-primaryBlue leading-medium-lh font-extraBold text-mediumText md:text-xlText  lg:text-2xlText max-lg:text-center">
+                    Discover The Tools That Make Our Phone Systems Stand Out, Feature The Drive Your Business Forward
+                </h1>
+            </div>
+            <div class="cursor-pointer w-full border-t mx-auto border-t-[1px] border-primaryTextColor lg:w-[50%]">
+                <div onclick="toggleAccordion(event)"
+                    class="w-full flex flex-col gap-[18px] pt-[18px] pb-[18px] cursor-pointer">
+                    <h3 class="font-[kanit] flex justify-between items-center text-[20px] leading-[20px] font-[600]">
+                        Crystal Clear Audio Quality
+                        <span class="ml-auto toggle-link">+</span>
+                    </h3>
+                    <p
+                        class="hidden toggle font-[kanit] text-primaryTextColor font-normalWeight text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                        Experience unmatched call clarity with advanced audio technology that ensures every conversation
+                        is sharp and free from distortion, even during high-traffic communication.
+                    </p>
+                </div>
+                <div onclick="toggleAccordion(event)"
+                    class="w-full flex flex-col gap-[18px] pt-[18px] pb-[18px] border-t border-t-[1px] border-primaryTextColor">
+                    <h3 class="font-[kanit] flex justify-between items-center text-[20px] leading-[20px] font-[600]">
+                        Multi-Device Integration
+                        <span class="ml-auto toggle-link">+</span>
+                    </h3>
+                    <p
+                        class="hidden toggle font-[kanit] text-primaryTextColor font-normalWeight text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                        Experience unmatched call clarity with advanced audio technology that ensures every conversation
+                        is sharp and free from distortion, even during high-traffic communication.
+                    </p>
+                </div>
+                <div onclick="toggleAccordion(event)"
+                    class="w-full flex flex-col gap-[18px] pt-[18px] pb-[18px] border-t border-t-[1px] border-primaryTextColor">
+                    <h3 class="font-[kanit] flex justify-between items-center text-[20px] leading-[20px] font-[600]">
+                        Advanced Call Routing
+                        <span class="ml-auto toggle-link">+</span>
+                    </h3>
+                    <p
+                        class="hidden toggle font-[kanit] text-primaryTextColor font-normalWeight text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                        Experience unmatched call clarity with advanced audio technology that ensures every conversation
+                        is sharp and free from distortion, even during high-traffic communication.
+                    </p>
+                </div>
+                <div onclick="toggleAccordion(event)"
+                    class="w-full flex flex-col gap-[18px] pt-[18px] pb-[18px] border-t border-t-[1px] border-primaryTextColor">
+                    <h3 class="font-[kanit] flex justify-between items-center text-[20px] leading-[20px] font-[600]">
+                        Video Conferancing Ready
+                        <span class="ml-auto toggle-link">+</span>
+                    </h3>
+                    <p
+                        class="hidden toggle font-[kanit] text-primaryTextColor font-normalWeight text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                        Experience unmatched call clarity with advanced audio technology that ensures every conversation
+                        is sharp and free from distortion, even during high-traffic communication.
+                    </p>
+                </div>
+                <div onclick="toggleAccordion(event)"
+                    class="w-full flex flex-col gap-[18px] pt-[18px] pb-[18px] border-t border-t-[1px] border-primaryTextColor">
+                    <h3 class="font-[kanit] flex justify-between items-center text-[20px] leading-[20px] font-[600]">
+                        Cloud-Based System Management
+                        <span class="ml-auto toggle-link">+</span>
+                    </h3>
+                    <p
+                        class="hidden toggle font-[kanit] text-primaryTextColor font-normalWeight text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                        Experience unmatched call clarity with advanced audio technology that ensures every conversation
+                        is sharp and free from distortion, even during high-traffic communication.
+                    </p>
+                </div>
+                <div onclick="toggleAccordion(event)"
+                    class="w-full flex flex-col gap-[18px] pt-[18px] pb-[18px] border-y border-y-[1px] border-primaryTextColor">
+                    <h3 class="font-[kanit] flex justify-between items-center text-[20px] leading-[20px] font-[600]">
+                        Customizable User Interface
+                        <span class="ml-auto toggle-link">+</span>
+                    </h3>
+                    <p
+                        class="hidden toggle font-[kanit] text-primaryTextColor font-normalWeight text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                        Experience unmatched call clarity with advanced audio technology that ensures every conversation
+                        is sharp and free from distortion, even during high-traffic communication.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div
+            class="w-[100%] bg-primaryBlue mx-auto flex flex-col gap-[70px] py-[70px] md:[90px] md:gap-[150px] xl:py-[150px]">
+            <!-- hardware section -->
+            <section
+                class="max-[1299px]:mx-mediumMargin max-w-sectionWidth mx-auto flex flex-col gap-mediumGap md:gap-xlGap ">
+                <!-- hardware information -->
+                <div class="max-w-sectionWidth">
+                    <h2
+                        class="font-sp-g text-white text-center leading-medium-lh font-extraBold text-mediumText md:text-xlText  lg:text-2xlText max-lg:text-center">
+                        Hardware: Reliable And Elegant Hardware Built For Clear Communication And Ease Of Use.
+                    </h2>
+                </div>
+                <!-- hardware product information -->
+                <div
+                    class="max-w-sectionWidth flex justify-center mx-auto gap-[40px] md:gap-[60px] lg:flex-row max-lg:flex-wrap">
+                    <div
+                        class="border border-[1px] border-white rounded-[14px] p-[30px] flex flex-col gap-[10px] md:gap-[20px] lg:w-[33.33%]">
+                        <div class="mx-auto">
+                            <img src="./images/VVX-400-new.png" class="" alt="">
+                        </div>
+                        <div class="max-w-[340px] flex flex-col gap-[10px] md:gap-[20px]">
+                            <h3
+                                class="font-sp-g text-white text-center text-mediumText leading-small-lh font-extraBold md:text-largText">
+                                Polycom VVX 400
+                            </h3>
+                            <p
+                                class="font-[kanit] text-white text-center font-normalWeight text-smallparagraph leading-pl  md:leading-lgpl lg:text-largeParagraph">
+                                A color mid-range 12 line media phone for enhanced call handling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border border-[1px] border-white rounded-[14px] p-[30px] flex flex-col gap-[10px] md:gap-[20px] lg:w-[33.33%]">
+                        <div class="mx-auto">
+                            <img src="./images/VVX-500-new.png" class="" alt="">
+                        </div>
+                        <div class="max-w-[340px] flex flex-col gap-[10px] md:gap-[20px]">
+                            <h3
+                                class="font-sp-g text-white text-center text-mediumText leading-small-lh font-extraBold md:text-largText">
+                                Polycom VVX 500
+                            </h3>
+                            <p
+                                class="font-[kanit] text-white text-center font-normalWeight text-smallparagraph leading-pl  md:leading-lgpl lg:text-largeParagraph">
+                                An easy-to-use, 12 line performance business media phone that’s designed for today’s
+                                busy managers and knowledgeable workers
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-[1px] border-white rounded-[14px] p-[30px] flex flex-col gap-[10px] md:gap-[20px] lg:w-[33.33%]">
+                        <div class="mx-auto">
+                            <img src="./images/VVX-600-new.png" class="" alt="">
+                        </div>
+                        <div class="max-w-[340px] flex flex-col gap-[10px] md:gap-[20px]">
+                            <h3
+                                class="font-sp-g text-white text-center leading-small-lh font-extraBold text-mediumText md:text-largText">
+                                Polycom VVX 600
+                            </h3>
+                            <p
+                                class="font-[kanit] font-normalWeight text-white text-center text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                                A premium 16 line business media phone delivering best-in-class desktop productivity for
+                                corporate executives and managers.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- software section -->
+            <section
+                class="max-[1299px]:mx-mediumMargin max-w-sectionWidth mx-auto flex flex-col gap-[60px] md:gap-[100px]">
+                <!-- software information -->
+                <div class="max-w-sectionWidth">
+                    <h2
+                        class="font-sp-g leading-medium-lh font-extraBold text-white text-center text-mediumText md:text-xlText  lg:text-2xlText max-lg:text-center">
+                        Software: Seamless Software Solutions That Optimize Communication Efficiency And Enhance Your
+                        Workflows
+                    </h2>
+                </div>
+                <!-- software img information -->
+                <div class="max-w-sectionWidth flex flex-col gap-mediumGap md:gap-largGap">
+                    <!-- mac information -->
+                    <div class="max-w-sectionWidth flex flex-col-reverse gap-[30px] items-center lg:flex-row">
+                        <div
+                            class="w-full mx-auto flex gap-smallGap flex-col justify-center lg:max-w-[50%] lg:gap-largGap ">
+                            <h3
+                                class="font-sp-g text-white leading-small-lh font-extraBold text-mediumText max-md:text-center md:text-largText">
+                                Empower Your Business With Intuitive Phone System Software
+                            </h3>
+                            <p
+                                class="font-[kanit] font-normalWeight text-white text-smallparagraph leading-pl max-md:text-center lg:text-largeParagraph md:leading-lgpl">
+                                Our Software Brings Everything You Need Into One Sleek, Easy-To-Navigate Dashboard.
+                                Manage Devices, Monitor Call Paths, And Access Messages—All From A Single, Cloud-Based
+                                Platform.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-centermd md:max-w-[50%] max-md:mt-[25px]">
+                            <img src="./images/mac1-1.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="max-w-sectionWidth mx-auto flex-col gap-[50px] flex lg:flex-row lg:gap-[117px]">
+
+                        <div class="flex items-center gap-[15px] flex-row md:gap-[30px]  lg:w-[45%] ">
+                            <div class="flex flex-col justify-around max-w-[200px]">
+                                <img src="./images/svg 1.png" alt="">
+                            </div>
+                            <div class="flex gap-[11px] flex-col w-[80%]">
+                                <h4
+                                    class="text-white leading-medium-lh font-extraBold text-largeParagraph text-white font-sp-g lg:text-mediumText">
+                                    Seamless Device & Call Path Communication
+                                </h4>
+                                <p
+                                    class="font-[kanit] text-white  text-smallparagraph leading-pl lg:text-largeParagraph md:leading-lgpl font-normalWeight">
+                                    Quickly Setup Devices, Voicemails And Extensions That Activate Instantly
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" gap-[15px] flex flex-row  md:gap-[30px] lg:w-[55%]">
+                            <div class="flex-col justify-around flex  max-w-[200px]">
+                                <img src="./images/svg2.png" alt="" class="">
+                            </div>
+                            <div class="flex flex-col gap-[11px] justify-center w-[80%]">
+                                <h4
+                                    class="leading-medium-lh font-extraBold text-white text-largeParagraph font-sp-g lg:text-mediumText">
+                                    Effortlessly Control Your Entire Communication Infrastructure.
+                                </h4>
+                                <p
+                                    class="font-[kanit] text-smallparagraph font-normalWeight leading-pl text-white md:leading-lgpl lg:text-largeParagraph">
+                                    Real-Time Status Updates, Call Routing, Messages And Device Management, You Can Keep
+                                    Your Team Connected With Minimal Effort.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- I-MAC INFOR MATION -->
+                <div class="max-w-sectionWidth flex gap-[20px] md:gap-[50px] lg:flex-row flex-col">
+                    <div class="mx-auto flex flex-col justify-center md:max-w-[53%]">
+                        <img src="./images/mac-2.png" alt="">
+                    </div>
+                    <div class="mx-auto flex flex-col justify-center gap-[21px] lg:max-w-[47%] lg:gap-[43px]">
+                        <h3
+                            class="font-sp-g text-mediumText leading-small-lh font-extraBold text-white max-md:text-center md:text-largText">
+                            Innovative Communication Software: Streamlined Call Path Customization For Your Business
+                        </h3>
+                        <p
+                            class="font-[kanit] font-normalWeight text-white leading-pl text-smallparagraph max-md:text-center md:leading-lgpl lg:text-largeParagraph">
+                            Manage Devices, Monitor Call Paths, And Access Messages—All Rom A Single, Cloud-Based
+                            Platform.
+                        </p>
+
+                        <p
+                            class="font-[kanit] font-normalWeight text-smallparagraph leading-pl text-white max-md:text-center md:leading-lgpl lg:text-largeParagraph">
+                            Design Efficient Call Flows Tailored To Your Business Needs With Our Intuitive Drag-And-Drop
+                            Interface. Simplify Complex Call Routing By Easily Adding Devices, Extensions, And Automated
+                            Services Into Step-By-Step Calling Paths—No Technical Expertise Required
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- compny information -->
+
+        <section
+            class="max-[1299px]:mx-mediumMargin  max-w-sectionWidth mx-auto flex flex-col gap-mediumGap md:gap-xlGap ">
+            <div class=" max-w-[813px] mx-auto flex gap-[10px]">
+                <h2
+                    class="font-sp-g leading-medium-lh font-extraBold text-mediumText text-primaryBlue  max-md:text-center md:text-xlText max-lg:text-center lg:text-2xlText">
+                    Why Hunter Networking: Tailored Solutions, Reliable Support And Elegant Design.
+                </h2>
+            </div>
+            <div
+                class=" max-w-sectionWidth mx-auto flex gap-smallGap md:flex-row  md:gap-largGap max-lg:grid max-lg:grid-cols-2">
+                <div class="mx-auto text-center flex flex-col gap-[12px] lg:w-[25%]">
+                    <h1
+                        class="leading-medium-lh font-extraBold text-mediumText font-sp-g text-primaryBlue max-md:text-center  md:text-xlText max-lg:text-center lg:text-2xlText">
+                        45+
+                    </h1>
+                    <h4 class="font-sp-g leading-medium-lh font-extraBold text-smallText md:text-mediumText">
+                        Year Of Experience
+                    </h4>
+                </div>
+                <div class="lg:w-[25%] mx-auto text-center flex flex-col gap-[12px]">
+                    <h1
+                        class="leading-medium-lh font-extraBold text-mediumText font-sp-g text-primaryBlue max-md:text-center  md:text-xlText max-lg:text-center lg:text-2xlText">
+                        98%
+                    </h1>
+                    <h4 class="font-sp-g leading-medium-lh font-extraBold text-smallText md:text-mediumText">
+                        Customer Retention Rate
+                    </h4>
+                </div>
+                <div class="lg:w-[25%] mx-auto text-center flex flex-col gap-[12px]">
+                    <h1
+                        class="leading-medium-lh font-extraBold text-mediumText font-sp-g text-primaryBlue max-md:text-center  md:text-xlText max-lg:text-center lg:text-2xlText">
+                        99.99%
+                    </h1>
+                    <h4 class="font-sp-g leading-medium-lh font-extraBold text-smallText md:text-mediumText">
+                        Uptime Guarantee
+                    </h4>
+                </div>
+                <div class="lg:w-[25%] mx-auto text-center flex flex-col gap-[12px]">
+                    <h1
+                        class="leading-medium-lh font-extraBold text-mediumText font-sp-g text-primaryBlue max-md:text-center  md:text-xlText max-lg:text-center lg:text-2xlText">
+                        100%
+                    </h1>
+                    <h4 class="font-sp-g leading-medium-lh font-extraBold text-smallText md:text-mediumText">
+                        Customizable Solution
+                    </h4>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- clint information -->
+
+        <section class="max-[1299px]:mx-mediumMargin max-w-sectionWidth mx-auto flex flex-col gap-smallGap md:gap-xlGap xl:flex-row">
+            <div
+                class="w-full xl:[50%] flex mx-auto flex-col justify-center gap-mediumGap items-center md:gap-xlGap xl:w-[50%]">
+                <div class="w-full flex flex-col gap-[20px] md:gap-[40px]">
+                    <h2 class="font-sp-g text-primaryBlue leading-medium-lh font-extraBold  max-md:text-center text-mediumText md:text-xlText  max-lg:text-center lg:text-2xlText">
+                        What Our Happy Client Says
+                    </h2>
+                    <p
+                        class="font-[kanit] font-normalWeight text-primaryTextColor leading-pl text-smallparagraph max-md:text-center md:leading-lgpl lg:text-largeParagraph">
+                        See How Hunter Networking Has Transformed Business Communication For Our Clients.
+                    </p>
+                </div>
+                <div class="w-full flex flex-col gap-[17px] md:gap-[35px]">
+                    <img src="./images/image_2024_10_21T09_41_43_237Z.png" alt="">
+                </div>
+            </div>
+
+            <div class="w-full md:w-[80%] xl:w-[50%] flex flex-col shadow-xl rounded-[25px] mx-auto gap-smallGap py-[40px] px-[40px] md:py-[80px] md:px-[100px] lg:gap-largGap">
+                <div class="flex flex-col gap-[30px]">
+                    <div class="mx-auto">
+                        <img src="./images/svg3.png" alt="">
+                    </div>
+                    <!-- Container for quotes -->
+                    <div class="quoteLoop block mx-auto ">
+                        <div class="quote flex flex-col gap-smallGap lg:gap-largGap"> <!-- Wrap each quote in a div with class 'quote' -->
+                            <h2 class="quout font-sp-g font-[700] text-center text-[18px] md:text-[24px] md:leading-[30px]">
+                                Hunter Networking's Phone System Has Streamlined Our Communication And Helped Us Scale Faster
+                                Than We Ever Thought Possible.
+                            </h2>
+                            <div>
+                                <h2 class="font-[700] text-[18px] text-center leading-[30px] md:font-sp-g md:leading-[30px] lg:text-[24px]">
+                                    John Butlor
+                                </h2>
+                                <p class="font-normalWeight font-[kanit] text-primaryTextColor text-center text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                                    Purchase Manager
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add more quotes as needed, following the same structure -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="max-[1299px]:mx-mediumMargin max-w-sectionWidth mx-auto flex flex-col gap-mediumGap lg:gap-xlGap ">
+            <div class="w-full max-w-sectionWidth mx-auto flex flex-col gap-[20px] lg:flex-row lg:gap-[100px]">
+                <div class="max-w-[852px]">
+                    <h1
+                        class="font-[Space Grotesk] font-bold text-primaryBlue text-[30px] leading-[1] md:text-[50px] xl:text-[5.3vw] 2xl:text-[100px]">
+                        Let’s Elevate Your Communication
+                    </h1>
+                </div>
+                <div class="w-full flex flex-col justify-center lg:max-w-[356px]">
+                    <p
+                        class="text-primaryTextColor font-normalWeight font-[Kanit] text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                        Ready to experience the difference with Hunter Networking? Contact us today for a personalized
+                        solution
+                    </p>
+                </div>
+            </div>
+            <div class="w-full max-w-sectionWidth mx-auto flex flex-col max-lg:gap-[30px] lg:gap-[5vw] lg:flex-row">
+                <div class="w-full flex flex-col gap-[27px] lg:max-w-[40%]">
+                    <h2 class="font-[kanit] text-[18px] md:text-[26px] md:leading-[38px] font-[400]">
+                        We want to hear from you. Let’s us know how can we help you!
+                    </h2>
+                    <div class="flex flex-col gap-[10px]">
+                        <p
+                            class="text-primaryTextColor font-[Kanit] text-smallparagraph leading-pl lg:text-largeParagraph md:leading-lgpl font-normalWeight">
+                            (408) 599-3900
+                        </p>
+                        <p
+                            class="text-primaryTextColor font-[Kanit] text-smallparagraph leading-pl lg:text-largeParagraph md:leading-lgpl font-normalWeight">
+                            info@hunternetworking.com
+                        </p>
+                        <p
+                            class="text-primaryTextColor font-[Kanit] text-smallparagraph leading-pl lg:text-largeParagraph md:leading-lgpl font-normalWeight">
+                            111 N MARKET ST STE 300 SAN JOSE, CA 95113
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="w-full gap-[20px] grid-col-1 flex-row flex md:grid-cols-2">
+                        <div class="my-2 w-full flex flex-col gap-[20px] ">
+                            <input type="text" placeholder="Name*"
+                                class="w-full border-b border-b-gray-300 py-2 pr-2 rounded-b-none" required>
+                            <input type="text" placeholder="Email*"
+                                class="w-full border-b border-b-gray-300 py-2 pr-2 rounded-b-none" required>
+                        </div>
+                        <div class="my-2 w-full flex flex-col gap-[20px]">
+                            <input type="text" placeholder="Phone*"
+                                class="w-full border-b border-b-gray-300 py-2 pr-rounded-b-none" required>
+                            <input type="text" placeholder="Subject*"
+                                class="w-full border-b border-b-gray-300 py-2 pr-rounded-b-none" required>
+                        </div>
+
+                    </div>
+                    <div class="w-full">
+                        <textarea placeholder="Message"
+                            class=" w-[100%] border-b border-b-gray-300 block py-2 rounded-b-none" rows="4"
+                            required></textarea>
+                    </div>
+                    <div class="mt-[10px]">
+                        <button type="submit"
+                            class="bg-primaryBlue text-white py-[18px] px-[30px] rounded transition ease-in-out hover:text-primaryBlue hover:bg-white hover:outline hover:outline-2 hover:outline-primaryBlue">
+                            Send A Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer
+        class="w-full bg-black mx-auto flex flex-col gap-[40px] mt-[70px] md:mt-[90px] max-lg:pb-[0px] xl:pt-[75px] xl:mt-[150px]">
+        <div
+            class="max-[1299px]:mx-mediumMargin mx-auto border-b border-b-[1px] border-primaryTextColor flex-col gap-[50px]mx-auto max-w-sectionWidth flex md:flex-row lg:gap-[99px]">
+            <div
+                class="mx-auto flex flex-col gap-[50px] pt-[35px] md:pt-[55px] md:pb-[105px] md:w-[30%] lg:pt-[75px]  xl:pt-[0px]">
+                <div class="max-w-[370px]  flex flex-col gap-[30px]">
+                    <div class="w-[200px] md:max-w-[300px]  max-md:mx-auto">
+                        <img src="./images/footer-logo.png" alt="">
+                    </div>
+                    <p class="text-primaryTextColor text-[18px] font-[Kanit] leading-[26px] max-md:text-center">
+                        Comfortably Connected.
+                        Elegant phone systems designed for your business
+                    </p>
+                </div>
+                <div class="max-w-[136px] flex gap-[20px] max-md:mx-auto">
+                    <a href="#" class="fa-brands fa-facebook-f text-white hover:text-gray-500 text-[20px]"></a>
+                    <a href="#" class="fa-brands fa-x-twitter text-white hover:text-gray-500 text-[20px]"></a>
+                    <a href="#" class="fa-brands fa-instagram text-white hover:text-gray-500 text-[20px]"></a>
+                    <a href="#" class="fa-brands fa-linkedin-in text-white hover:text-gray-500 text-[20px]"></a>
+                </div>
+
+            </div>
+            <div class="mx-auto md:w-[70%]">
+                <div
+                    class=" border-primaryTextColor pb-[50px] flex pt-[55px]  md:pl-[59px] gap-[30px] md:gap-[70px] md:border-l md:border-l-[1px] lg:pt-[75px] max-xl:flex-wrap xl:flex-row xl:pt-[0px]">
+                    <div class="mx-auto flex flex-col gap-[15px] md:gap-[30px] xl:w-[25%] max-xl:text-center">
+                        <h2 class="font-sp-g text-white text-[24px] leading-[30px] font-[700]">Quick Links</h2>
+                        <div class="flex flex-col gap-[10px] md:gap-[20px]">
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Home
+                            </a>
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Solution
+                            </a>
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Feature
+                            </a>
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Why Us
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="mx-auto flex flex-col gap-[15px] md:gap-[30px] xl:w-[25%] max-xl:text-center">
+                        <h2 class="font-sp-g text-white text-[24px] leading-[30px] font-[700]">Contact Us</h2>
+                        <div class="flex flex-col gap-[10px] md:gap-[20px]">
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Contact
+                            </a>
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Terms Of Services
+                            </a>
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Privacy Services
+                            </a>
+                            <a href="#"
+                                class="font-[kanit] text-white text-smallparagraph leading-pl font-normalWeight hover:text-gray-500">
+                                Blog
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="mx-auto flex flex-col gap-[15px] md:gap-[30px] max-md:pt-[30px] xl:w-[50%] max-xl:text-center">
+                        <h2 class="font-sp-g text-white text-[24px] leading-[30px] font-[700]">Newsletter</h2>
+                        <p
+                            class="font-normalWeight text-primaryTextColor text-smallparagraph leading-pl md:font-[kanit] md:leading-lgpl lg:text-largeParagraph">
+                            Feel free to reach out if you want to collaborate with us, or simply chat.
+                        </p>
+                        <div class="relative">
+                            <input type="text" placeholder="Enter Email"
+                                class="bg-[#202020] w-full py-3 pl-[40px] text-white font-[kanit] pr-[40px]" required>
+                            <img src="./images/svg4.png" class="absolute left-2 top-4" alt="">
+                            <button class="absolute right-2 top-4">
+                                <img src="./images/svg 5.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-sectionWidth mx-auto">
+            <p
+                class="font-[kanit] font-normalWeight text-white text-center text-smallparagraph leading-pl md:leading-lgpl lg:text-largeParagraph">
+                © Hunter Network - All Rights Reserved. <br class="sm:hidden">
+                <a href="#"
+                    class=" font-[kanit] text-whitehover:text-gray-500 underline text-smallparagraph leading-pl lg:text-largeParagraph md:leading-lgpl font-normalWeight hover:text-gray-500">Private
+                    Policy</a> /
+                <a href="#"
+                    class="font-[kanit] font-normalWeight text-white underline text-smallparagraph leading-pl lg:text-largeParagraph md:leading-lgpl hover:text-gray-500">Terms
+                    Of Use
+            </p>
+
+        </div>
+    </footer>
+    <script src="./js/function.js"></script>
+</body>
+
+
+</html>
